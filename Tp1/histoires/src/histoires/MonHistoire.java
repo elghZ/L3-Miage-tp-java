@@ -1,60 +1,26 @@
 package histoires;
 
+import personnages.principaux.*;
+
 public class MonHistoire {
 
-	private String nom;
-	private String boissonPrefere ; 
-	private int argent;
-	
-	public MonHistoire ( String nom, String boissonPrefere, int argent) {
-		this.nom = nom;
-		this.boissonPrefere = boissonPrefere;
-		this.argent = argent;
-	}
-	
-	
-	public String getNom() {
-		return nom;
-	}
-	public String getBoissonPrefere() {
-		return boissonPrefere;
-	}
-	public int getArgent() {
-		return argent;
-	}
+	public static void main(String [] args) {
+		Humains humain = new Humains("Prof", "Porto", 10);
+		humain.bonjour();
+		System.out.println("yyyy");
 
-public void setNom(String nom) {
-		this.nom = nom;
-	}
-	public void setBoissonPrefere(String boissonPrefere) {
-		this.boissonPrefere = boissonPrefere;
-	}
-	public void setArgent(int argent) {
-		this.argent = argent;
-	}
+		humain.boire();
 
-
-public String parler (String parle) {
-	return "(<" + this.nom + ">)" + " - " + parle;
-}
-
-public void bonjour () {
-	parler("Bonjour ! Je m’appelle" + this.nom + "et j’aime boire du"+ this.boissonPrefere);
-}
-public void boire () {
-	parler("Mmmm, un bon verre de" + this.boissonPrefere +"! GLOUPS !");
-}
-
-public int gain(int x) {
-	return getArgent() + x;
-}
-public int perte(int x) {
-	return getArgent() - x;
-}
-
-
-	public static void main(String[] args) {
-		
+		Commercants commercant = new Commercants("Marchand", 35);
+		commercant.bonjour();
+		Yakuzas yakusa = new Yakuzas("Yaku␣le␣noir", 42,
+				"biere", "WarSong");
+		yakusa.bonjour();
+		yakusa.extorquer(commercant);
+		Ronnins ronin = new Ronnins("Roro", 61, "sake");
+		ronin.donner(10, commercant );
+		ronin.provoquer(yakusa);
+		ronin.bonjour();
 	}
 
 }

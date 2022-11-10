@@ -13,6 +13,7 @@ public class Humains {
 	}
 
 
+
 	public String getNom() {
 		return nom;
 	}
@@ -23,12 +24,12 @@ public class Humains {
 		return argent;
 	}
 
-	public String parler (String parle) {
-		return "(<" + this.nom + ">)" + " - " + parle;
+	public void parler (String parle) {
+		System.out.println( "(<" + this.nom + ">)" + " - " + parle);
 	}
 
 	public void bonjour () {
-		parler("Bonjour ! Je m’appelle" + this.nom + "et j’aime boire du"+ this.boissonPrefere);
+		parler("Bonjour ! Je m’appelle " + this.nom + " et j’aime boire du "+ this.boissonPrefere + ".");
 	}
 	public void boire () {
 		parler("Mmmm, un bon verre de" + this.boissonPrefere +"! GLOUPS !");

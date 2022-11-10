@@ -1,0 +1,12 @@
+package personnages.principaux;
+
+
+public class Ronnins extends Humains {
+
+	private int honneur =1;
+	
+	public Ronnins(String nom, String boissonPrefere, int argent) {
+		super(nom, boissonPrefere, argent);	
+	}
+
+}

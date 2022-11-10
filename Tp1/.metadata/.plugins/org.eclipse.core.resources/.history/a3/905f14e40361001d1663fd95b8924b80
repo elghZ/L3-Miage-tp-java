@@ -1,0 +1,29 @@
+package personnages.secondaires;
+
+import personnages.principaux.Samourai;
+
+public class Traitres extends Samourai{
+	
+	private int traitrise;
+	
+	public Traitres(String nom,int argent, String boissonPrefere,  String seigneur) {
+		super(nom,argent,boissonPrefere, seigneur);
+		this.traitrise = 1;
+	}
+	
+	public int getTraitrise() {
+		return this.traitrise;
+	}
+	
+	public void boire() {
+		super.boire();
+	}
+	
+	public void bonjour(){
+		super.parler("Bonjour ! Je m’appelle" + getNom() + "et j’aime boire du"
+				+ getBoissonPrefere() + "Mon seigneur est : " + getSeigneur());
+		
+	}
+	
+	
+}

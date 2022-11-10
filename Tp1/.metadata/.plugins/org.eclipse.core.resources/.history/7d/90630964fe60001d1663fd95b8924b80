@@ -1,0 +1,24 @@
+package personnages.principaux;
+
+
+public class Samourai extends Ronnins{
+
+	private String seigneur ;
+	
+	public Samourai(String nom, String boissonPrefere, int argent, String seigneur) {
+		super(nom, boissonPrefere, argent);
+		this.seigneur = seigneur;
+	}
+	
+	public String getSeigneur() {
+		return this.seigneur;
+	}
+	
+	public void bonjour(){
+		super.parler("Bonjour ! Je m’appelle" + getNom() + "et j’aime boire du"
+				+ getBoissonPrefere() + "Mon clan est : " + seigneur);
+		
+	}
+	
+	
+}
