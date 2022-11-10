@@ -1,0 +1,44 @@
+package histoires;
+
+public class MonHistoire {
+
+	private String nom;
+	private String boissonPrefere ; 
+	private Double argent;
+	
+	public MonHistoire ( String nom, String boissonPrefere, Double argent) {
+		this.nom = nom;
+		this.boissonPrefere = boissonPrefere;
+		this.argent = argent;
+	}
+	
+	
+	public String getNom() {
+		return nom;
+	}
+	public String getBoissonPrefere() {
+		return boissonPrefere;
+	}
+	public Double getArgent() {
+		return argent;
+	}
+
+public String parler (String parle) {
+	return "(<" + this.nom + ">)" + " - " + parle;
+}
+
+public void bonjour () {
+	parler("Bonjour ! Je m’appelle" + this.nom + "et j’aime boire du"+ this.boissonPrefere);
+}
+public void boire () {
+	parler("Mmmm, un bon verre de" + this.boissonPrefere +"! GLOUPS !");
+}
+
+
+
+
+	public static void main(String[] args) {
+		
+	}
+
+}

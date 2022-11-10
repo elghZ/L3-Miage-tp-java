@@ -1,0 +1,33 @@
+package personnages.principaux;
+
+import histoires.MonHistoire;
+
+public class Yakuzas extends MonHistoire{
+
+	private String clan ;
+	private int reput = 0;
+	
+	public Yakuzas(String nom, String boissonPrefere, int argent, String clan) {
+		super(nom, boissonPrefere, argent);
+		this.clan = clan;
+	}
+
+	public String getClan() {
+		return clan;
+	}
+	public void setClan(String clan) {
+		this.clan = clan;
+	}
+	public int getReput() {
+		return reput;
+	}
+	public void setReput(int reput) {
+		this.reput = reput;
+	}
+
+	public void extorquer(Commercants commercant) {
+		commercant.seFaireExtorquer();
+		
+	}
+	
+}

@@ -1,0 +1,11 @@
+package personnages.principaux;
+
+import histoires.MonHistoire;
+
+public class Yakuzas extends MonHistoire{
+
+	public Yakuzas(String nom, String boissonPrefere, int argent) {
+		super(nom, boissonPrefere, argent);
+	}
+
+}

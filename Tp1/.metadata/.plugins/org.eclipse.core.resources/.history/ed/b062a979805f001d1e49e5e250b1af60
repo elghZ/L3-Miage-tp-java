@@ -1,0 +1,12 @@
+package personnages.principaux.copy;
+
+import histoires.MonHistoire;
+
+public class Ronnins extends MonHistoire {
+
+	public Ronnins(String nom, String boissonPrefere, int argent) {
+		super(nom, boissonPrefere, argent);
+		// TODO Auto-generated constructor stub
+	}
+
+}

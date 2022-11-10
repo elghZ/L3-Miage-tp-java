@@ -1,0 +1,12 @@
+package histoires.personnages;
+
+import histoires.MonHistoire;
+
+public class Commerçants extends MonHistoire {
+
+	public Commerçants(String nom, String boissonPrefere, Double argent) {
+		super(nom, boissonPrefere, argent);
+		// TODO Auto-generated constructor stub
+	}
+
+}

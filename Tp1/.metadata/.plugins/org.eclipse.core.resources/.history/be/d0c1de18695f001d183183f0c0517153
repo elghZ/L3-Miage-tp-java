@@ -1,0 +1,12 @@
+package personnages.principaux;
+
+import histoires.MonHistoire;
+
+public class Commercants extends MonHistoire {
+
+	public Commercants(String nom, String boissonPrefere, int argent) {
+		super(nom, boissonPrefere, argent);
+		
+	}
+
+}
